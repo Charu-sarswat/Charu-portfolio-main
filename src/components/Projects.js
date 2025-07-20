@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLaptop, FaMobile, FaGlobe, FaRocket, FaBrain, FaServer, FaGraduationCap } from 'react-icons/fa';
+import { FaCode, FaLaptop, FaMobile, FaGlobe, FaRocket, FaBrain, FaDatabase, FaServer, FaGraduationCap } from 'react-icons/fa';
 import './Projects.css';
 
 const Projects = () => {
@@ -130,6 +130,15 @@ const Projects = () => {
                     Video Demo
                   </a>
                 )}
+                <a 
+                  href={project.sourceCodeLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="project-link source-link"
+                  style={{ borderColor: project.color, color: project.color }}
+                >
+                  Source Code
+                </a>
               </div>
             </div>
           ))}
