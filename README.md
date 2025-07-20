@@ -1,6 +1,6 @@
-# Charu Sarswat's Portfolio Website
+# Charu's Portfolio Website
 
-A modern, responsive portfolio website built with React by Charu Sarswat, a B.Tech student showcasing skills, projects, and professional experience.
+A modern, responsive portfolio website built with React for a B.Tech student showcasing skills, projects, and professional experience.
 
 ## 🚀 Features
 
@@ -120,12 +120,10 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📞 Contact
 
-For any questions or suggestions, please reach out to Charu Sarswat:
-- Email: charu.sarswat@example.com
-- GitHub: [Charu Sarswat's GitHub Profile]
-- LinkedIn: [Charu Sarswat's LinkedIn Profile]
+For any questions or suggestions, please reach out:
+- Email: charu@example.com
+- GitHub: [Your GitHub Profile]
 
 ---
 
-**Created by**: Charu Sarswat  
-**Portfolio Website**: A showcase of skills, projects, and professional experience built with React and modern web technologies.
+**Note**: This is a template portfolio website. Please customize all content, images, and personal information before using it for your own portfolio. 

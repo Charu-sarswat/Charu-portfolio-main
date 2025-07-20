@@ -12,9 +12,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 25%, rgba(241, 245, 249, 0.95) 50%, rgba(226, 232, 240, 0.95) 75%, rgba(203, 213, 225, 0.95) 100%);
   background-image: 
-    url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='grid' width='20' height='20' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 20 0 L 0 0 0 20' fill='none' stroke='%233b82f6' stroke-width='0.5' opacity='0.1'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100' height='100' fill='url(%23grid)'/%3E%3Ccircle cx='50' cy='50' r='3' fill='%233b82f6' opacity='0.15'/%3E%3Ccircle cx='20' cy='20' r='2' fill='%238b5cf6' opacity='0.1'/%3E%3Ccircle cx='80' cy='30' r='2' fill='%2310b981' opacity='0.1'/%3E%3Ccircle cx='30' cy='80' r='2' fill='%23f59e0b' opacity='0.1'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='grid' width='20' height='20' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 20 0 L 0 0 0 20' fill='none' stroke='%233b82f6' stroke-width='0.3' opacity='0.08'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='60' height='60' fill='url(%23grid)'/%3E%3C/svg%3E"),
     linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 25%, rgba(241, 245, 249, 0.95) 50%, rgba(226, 232, 240, 0.95) 75%, rgba(203, 213, 225, 0.95) 100%);
-  background-size: 100px 100px, cover;
+  background-size: 60px 60px, cover;
   background-position: center, center;
   background-repeat: repeat, no-repeat;
   background-attachment: fixed;

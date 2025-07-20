@@ -1,43 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Experience from './components/Experience';
-import Contact from './components/Contact';
+import React, { Suspense, lazy } from 'react';
+import LoadingSpinner from './components/LoadingSpinner';
 import './App.css';
 
+// Lazy load components for better performance
+const Hero = lazy(() => import('./components/Hero'));
+const About = lazy(() => import('./components/About'));
+const Skills = lazy(() => import('./components/Skills'));
+const Projects = lazy(() => import('./components/Projects'));
+const Experience = lazy(() => import('./components/Experience'));
+const Contact = lazy(() => import('./components/Contact'));
+
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulate loading time
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="loading-screen">
-        <div className="loader"></div>
-        <p>Loading Portfolio...</p>
-      </div>
-    );
-  }
-
   return (
     <div className="App">
-      <Header />
-      <main>
+      <Suspense fallback={<LoadingSpinner />}>
         <Hero />
         <About />
         <Skills />
         <Projects />
         <Experience />
         <Contact />
-      </main>
+      </Suspense>
     </div>
   );
 }
