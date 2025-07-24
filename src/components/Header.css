@@ -15,7 +15,7 @@
 .header.scrolled {
   background: transparent;
   /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(59, 130, 246, 0.1); */
-  backdrop-filter: none;
+  backdrop-filter: blur(10px);
 }
 
 .header-content {

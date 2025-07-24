@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import './Hero.css';
 
@@ -20,20 +20,15 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-text">
             <p className="hero-greeting">
-              Hello, I'm
+              Hello, I'm <span className="hero-fullname">Charu Sarswat</span>
             </p>
             
-            <h1 className="hero-name">
-              Charu
-            </h1>
-            
             <h2 className="hero-title">
-              B.Tech Student & Aspiring Developer
+              Full Stack Developer, CTO & Co-founder Persist Venture(USA)
             </h2>
             
             <p className="hero-description">
-              Passionate about technology and innovation. Currently pursuing my B.Tech degree 
-              with a focus on software development and emerging technologies.
+              Building the future of social connection as CTO & co-founder of Soulmegle. Expert in scalable web apps, passionate about tech, startups, and turning ideas into reality.
             </p>
             
             <div className="hero-buttons">
