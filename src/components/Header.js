@@ -62,6 +62,7 @@ const Header = () => {
                 >
                   <a 
                     href={item.href}
+                    className={item.name === 'Home' ? 'active' : ''}
                     onClick={(e) => {
                       e.preventDefault();
                       scrollToSection(item.href);
