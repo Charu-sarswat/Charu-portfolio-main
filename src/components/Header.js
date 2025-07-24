@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaHome, FaUser, FaCode, FaProjectDiagram, FaBriefcase, FaEnvelope } from 'react-icons/fa';
 import './Header.css';
 
 const Header = () => {
@@ -18,12 +18,12 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Home', href: '#home', icon: <FaHome style={{marginRight: '0.5em'}} /> },
+    { name: 'About', href: '#about', icon: <FaUser style={{marginRight: '0.5em'}} /> },
+    { name: 'Skills', href: '#skills', icon: <FaCode style={{marginRight: '0.5em'}} /> },
+    { name: 'Projects', href: '#projects', icon: <FaProjectDiagram style={{marginRight: '0.5em'}} /> },
+    { name: 'Experience', href: '#experience', icon: <FaBriefcase style={{marginRight: '0.5em'}} /> },
+    { name: 'Contact', href: '#contact', icon: <FaEnvelope style={{marginRight: '0.5em'}} /> }
   ];
 
   const scrollToSection = (href) => {
@@ -48,7 +48,7 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <a href="#home">Charu</a>
+            <a href="#home">Portfolio</a>
           </motion.div>
 
           <nav className={`nav ${isOpen ? 'nav-open' : ''}`}>
@@ -67,7 +67,7 @@ const Header = () => {
                       scrollToSection(item.href);
                     }}
                   >
-                    {item.name}
+                    {item.icon}{item.name}
                   </a>
                 </motion.li>
               ))}
