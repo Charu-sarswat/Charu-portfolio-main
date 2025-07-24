@@ -27,9 +27,9 @@
 .logo a {
   font-size: 2rem;
   font-weight: 900;
-  color: #8b5cf6;
+  color: #3b82f6;
   text-decoration: none;
-  text-shadow: 0 0 30px rgba(139, 92, 246, 0.2);
+  text-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
   transition: all 0.3s ease;
 }
 
