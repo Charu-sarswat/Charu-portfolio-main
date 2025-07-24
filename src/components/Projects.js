@@ -43,8 +43,8 @@ const Projects = () => {
       demoLink: "https://savitaworld.netlify.app/",
       videoLink: "https://drive.google.com/file/d/18ckkPKlgsWO8BZv6eR8Ohp0YFOE31s18/view?usp=sharing",
       sourceCodeLink: "https://github.com/Charu-sarswat/Quiz",
-      icon: <FaMobile />,
-      color: "#96CEB4",
+      icon: <FaMobile />, 
+      color: "#2563eb", // blue
       technologies: ["React", "Tailwind", "JavaScript"]
     },
     {
@@ -53,8 +53,8 @@ const Projects = () => {
       description: "An innovative AI-powered virtual clothing try-on platform. Users can virtually try clothes through advanced computer vision and deep learning. Built during a hackathon, featuring real-time garment simulation and seamless UI/UX.",
       demoLink: "https://drive.google.com/drive/folders/1N20iV80GPnwtWxY_yS1Rm5Aos4v_ZyPG?usp=drive_link",
       sourceCodeLink: "https://github.com/Charu-sarswat/Try-Clothes",
-      icon: <FaBrain />,
-      color: "#FFEAA7",
+      icon: <FaBrain />, 
+      color: "#f59e42", // orange
       technologies: ["React", "TensorFlow", "AI/ML", "Computer Vision"]
     },
     {
@@ -63,8 +63,8 @@ const Projects = () => {
       description: "A project assessment given by a client based on HTML, CSS, JS, PHP, SQL. Includes user authentication and product information.",
       demoLink: "http://websign.infinityfreeapp.com/?i=1",
       sourceCodeLink: "https://github.com/Charu-sarswat/php",
-      icon: <FaServer />,
-      color: "#DDA0DD",
+      icon: <FaServer />, 
+      color: "#10b981", // green
       technologies: ["HTML", "CSS", "JavaScript", "PHP", "SQL"]
     },
     {
@@ -73,8 +73,8 @@ const Projects = () => {
       description: "Ecommerce platform for clothing with ordering and price checking features. Designed for retail shops and malls.",
       demoLink: "https://boisterous-praline-7192f1.netlify.app/",
       sourceCodeLink: "https://github.com/Charu-sarswat/Ecommerce",
-      icon: <FaLaptop />,
-      color: "#98D8C8",
+      icon: <FaLaptop />, 
+      color: "#f43f5e", // rose
       technologies: ["HTML", "CSS", "JavaScript"]
     }
   ];
@@ -130,15 +130,6 @@ const Projects = () => {
                     Video Demo
                   </a>
                 )}
-                <a 
-                  href={project.sourceCodeLink} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="project-link source-link"
-                  style={{ borderColor: project.color, color: project.color }}
-                >
-                  Source Code
-                </a>
               </div>
             </div>
           ))}

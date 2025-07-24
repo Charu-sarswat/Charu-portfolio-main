@@ -46,7 +46,7 @@
 .experience-card {
   background: white;
   border-radius: 25px;
-  padding: 2.5rem;
+  padding: 1.2rem 1.5rem;
   border: 2px solid rgba(59, 130, 246, 0.15);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -214,7 +214,7 @@
 .achievement-card {
   background: white;
   border-radius: 20px;
-  padding: 2rem;
+  padding: 1.2rem 1.5rem;
   border: 2px solid rgba(59, 130, 246, 0.15);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
