@@ -8,7 +8,7 @@
   backdrop-filter: none;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   padding: 1rem 0;
-  border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+  /* border-bottom: 1px solid rgba(59, 130, 246, 0.1); */
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
 }
 
