@@ -65,11 +65,6 @@ const Hero = () => {
           </a>
         </div>
         
-        <div className="scroll-indicator">
-          <div className="scroll-arrow" onClick={() => scrollToSection('#about')}>
-            <div className="arrow"></div>
-          </div>
-        </div>
       </div>
     </section>
   );
