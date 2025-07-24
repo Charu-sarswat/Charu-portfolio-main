@@ -151,6 +151,7 @@
   gap: 1.5rem;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 2.5rem;
 }
 
 .btn-primary {
@@ -206,9 +207,9 @@
 
 .social-link:hover {
   background: #3b82f6;
+  color: #fff;
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
-  color: white;
 }
 
 /* Responsive design */

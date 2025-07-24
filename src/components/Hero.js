@@ -24,7 +24,7 @@ const Hero = () => {
             </p>
             
             <h2 className="hero-title">
-              Full Stack Developer, CTO & Co-founder Persist Venture(USA)
+              Full Stack Developer, CTO-Persist Venture(USA)
             </h2>
             
             <p className="hero-description">
