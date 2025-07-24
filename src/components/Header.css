@@ -5,16 +5,16 @@
   right: 0;
   z-index: 1000;
   background: transparent;
-  backdrop-filter: none;
+  backdrop-filter: blur(10px);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   padding: 1rem 0;
   /* border-bottom: 1px solid rgba(59, 130, 246, 0.1); */
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+  /* box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05); */
 }
 
 .header.scrolled {
   background: transparent;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(59, 130, 246, 0.1);
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(59, 130, 246, 0.1); */
   backdrop-filter: none;
 }
 
@@ -71,7 +71,7 @@
   background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #10b981 100%);
   transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   border-radius: 2px;
-  box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+  /* box-shadow: 0 0 10px rgba(59, 130, 246, 0.3); */
 }
 
 .nav-list a:hover::after {
