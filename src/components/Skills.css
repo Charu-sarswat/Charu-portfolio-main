@@ -1,6 +1,5 @@
 .skills {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
+  background: #ffffff;
   position: relative;
 }
 
@@ -11,9 +10,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.05) 0%, transparent 50%);
+  background: #ffffff;
   pointer-events: none;
 }
 
@@ -50,7 +47,7 @@
   padding: 2rem;
   border: 1.5px solid #e0e7ef;
   box-shadow: 0 8px 32px rgba(59, 130, 246, 0.08);
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -73,7 +70,7 @@
   font-size: 1.8rem;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   border: 2px solid rgba(59, 130, 246, 0.1);
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
   flex-shrink: 0;
 }
 
@@ -106,7 +103,7 @@
 .skill-progress {
   height: 100%;
   border-radius: 10px;
-  transition: width 1s ease;
+  transition: width 0.3s ease;
   position: relative;
 }
 
@@ -118,7 +115,7 @@
   right: 0;
   bottom: 0;
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  animation: shimmer 2s infinite;
+  animation: shimmer 4s infinite;
 }
 
 @keyframes shimmer {
@@ -144,7 +141,7 @@
   padding: 1.5rem;
   border: 2px solid rgba(59, 130, 246, 0.15);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
   text-align: center;
   font-weight: 600;
   font-size: 1.1rem;
@@ -161,7 +158,7 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.05), transparent);
-  transition: left 0.5s;
+  transition: left 0.2s;
 }
 
 .core-skill-item:hover::before {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
@@ -36,14 +36,14 @@ const Contact = () => {
     {
       icon: <FaEnvelope />,
       title: 'Email',
-      value: 'charu@example.com',
-      link: 'mailto:charu@example.com'
+      value: 'charusaraswat639649@gmail.com',
+      link: 'mailto:charusaraswat639649@gmail.com'
     },
     {
       icon: <FaPhone />,
       title: 'Phone',
-      value: '+91 98765 43210',
-      link: 'tel:+919876543210'
+      value: '+91 6396497489',
+      link: 'tel:+916396497489'
     },
     {
       icon: <FaMapMarkerAlt />,
@@ -57,19 +57,19 @@ const Contact = () => {
     {
       icon: <FaGithub />,
       name: 'GitHub',
-      url: 'https://github.com',
+      url: 'https://github.com/Charu-sarswat?tab=repositories',
       color: '#1e40af'
     },
     {
       icon: <FaLinkedin />,
       name: 'LinkedIn',
-      url: 'https://linkedin.com',
+      url: 'https://www.linkedin.com/in/charu-sarswat-060590298/',
       color: '#1e40af'
     },
     {
-      icon: <FaTwitter />,
-      name: 'Twitter',
-      url: 'https://twitter.com',
+      icon: <FaInstagram />,
+      name: 'Instagram',
+      url: 'https://www.instagram.com/',
       color: '#1e40af'
     }
   ];

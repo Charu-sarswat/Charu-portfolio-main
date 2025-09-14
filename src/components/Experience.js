@@ -6,6 +6,23 @@ import './Experience.css';
 const Experience = () => {
   const experiences = [
     {
+      id: 3,
+      type: 'leadership',
+      title: 'Chief Technical Officer & Co-founder(Soulmegle)',
+      company: 'Persist Venture (USA)',
+      duration: 'February 2025 - August 2025 [Full time]',
+      description: 'Full-Stack web developer (Persist Ventures) serving as Chief Technical Officer and co-founder of the (Soulmegle Project).',
+      technologies: ['Full-Stack Development', 'Leadership', 'Business Strategy', 'Web Development'],
+      achievements: [
+        'Co-founded technology startup',
+        'Leading technical strategy and development',
+        'Managing full-stack web development projects'
+      ],
+      certificate: 'https://drive.google.com/file/d/1KzDPH28T7MrrnlTuGnb7UhhkYujAfMI5/view?usp=drive_link',
+      recommendation: 'https://drive.google.com/file/d/1KzDPH28T7MrrnlTuGnb7UhhkYujAfMI5/view?usp=drive_link',
+      color: '#F59E0B'
+    },
+    {
       id: 1,
       type: 'internship',
       title: 'Embedded System Developer',
@@ -36,21 +53,6 @@ const Experience = () => {
       ],
       certificate: 'https://f90xpzjw.r.ap-south-1.awstrack.me/L0/https:%2F%2Fskillwallet.smartinternz.com%2Fcertificate%2Fvirtual-internship%2Fe29b722e35040b88678e25a1ec032a21/2/01090195eff0a44f-0abe7e24-802c-4d94-9967-c51b2ced9652-000000/9uNJxvlIBmB52mqlQy4pYiNjqws=200',
       color: '#10B981'
-    },
-    {
-      id: 3,
-      type: 'leadership',
-      title: 'Chief Technical Officer & Co-founder',
-      company: 'Persist Venture (USA)',
-      duration: 'February 2025 - Current',
-      description: 'Full-Stack web developer serving as Chief Technical Officer and co-founder of the company.',
-      technologies: ['Full-Stack Development', 'Leadership', 'Business Strategy', 'Web Development'],
-      achievements: [
-        'Co-founded technology startup',
-        'Leading technical strategy and development',
-        'Managing full-stack web development projects'
-      ],
-      color: '#F59E0B'
     }
   ];
 
@@ -178,17 +180,31 @@ const Experience = () => {
           </ul>
         </div>
 
-        {experience.certificate && (
+        {(experience.certificate || experience.recommendation) && (
           <div className="certificate-link">
-            <a 
-              href={experience.certificate} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="certificate-btn"
-            >
-              <FaCertificate />
-              View Certificate
-            </a>
+            {experience.certificate && (
+              <a 
+                href={experience.certificate} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="certificate-btn"
+              >
+                <FaCertificate />
+                View Certificate
+              </a>
+            )}
+            {experience.recommendation && (
+              <a 
+                href={experience.recommendation} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="certificate-btn"
+                style={{ marginLeft: experience.certificate ? '1rem' : '0' }}
+              >
+                <FaCertificate />
+                View Recommendation
+              </a>
+            )}
           </div>
         )}
       </div>

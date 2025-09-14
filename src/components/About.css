@@ -1,6 +1,5 @@
 .about {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
+  background: #ffffff;
   position: relative;
 }
 
@@ -11,9 +10,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.05) 0%, transparent 50%);
+  background: #ffffff;
   pointer-events: none;
 }
 
@@ -101,7 +98,7 @@
   border-radius: 15px;
   border: 1px solid #e0e7ef;
   box-shadow: 0 2px 8px rgba(59, 130, 246, 0.06);
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
   position: relative;
   overflow: hidden;
 }
@@ -114,7 +111,7 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.05), transparent);
-  transition: left 0.5s;
+  transition: left 0.2s;
 }
 
 .info-item:hover::before {
@@ -188,7 +185,7 @@
   padding: 2.5rem;
   border: 1px solid rgba(59, 130, 246, 0.15);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
   position: relative;
   overflow: hidden;
 }
@@ -213,7 +210,7 @@
   height: 3px;
   background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.1s ease;
 }
 
 .education-item:hover::after {
@@ -291,7 +288,7 @@
   font-size: 0.9rem;
   font-weight: 600;
   border: 1px solid rgba(59, 130, 246, 0.2);
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
 
 .highlight-tag:hover {
@@ -332,7 +329,7 @@
   text-align: center;
   border: 1px solid rgba(59, 130, 246, 0.15);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
   position: relative;
   overflow: hidden;
 }
@@ -346,7 +343,7 @@
   height: 3px;
   background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.1s ease;
 }
 
 .interest-item:hover::before {
@@ -419,7 +416,7 @@
   backdrop-filter: blur(20px);
   border-radius: 20px;
   border: 1px solid rgba(59, 130, 246, 0.15);
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
   position: relative;
   overflow: hidden;
 }
@@ -432,7 +429,7 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.05), transparent);
-  transition: left 0.5s;
+  transition: left 0.2s;
 }
 
 .achievement-item:hover::before {
