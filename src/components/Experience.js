@@ -19,7 +19,7 @@ const Experience = () => {
         'Managing full-stack web development projects'
       ],
       certificate: 'https://drive.google.com/file/d/1KzDPH28T7MrrnlTuGnb7UhhkYujAfMI5/view?usp=drive_link',
-      recommendation: 'https://drive.google.com/file/d/1KzDPH28T7MrrnlTuGnb7UhhkYujAfMI5/view?usp=drive_link',
+      recommendation: 'https://drive.google.com/file/d/1QBQuPMv1FXF2Ox_9r6Mn3phMHoPjNi4q/view?usp=drive_link',
       color: '#F59E0B'
     },
     {
