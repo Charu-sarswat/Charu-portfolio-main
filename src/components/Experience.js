@@ -6,7 +6,7 @@ import './Experience.css';
 const Experience = () => {
   const experiences = [
     {
-      id: 3,
+      id: 4,
       type: 'leadership',
       title: 'Chief Technical Officer & Co-founder(Soulmegle)',
       company: 'Persist Venture (USA)',
@@ -39,7 +39,7 @@ const Experience = () => {
       color: '#4F46E5'
     },
     {
-      id: 2,
+      id: 3,
       type: 'internship',
       title: 'Full-Stack Developer Intern',
       company: 'SmartInternz',
@@ -53,6 +53,21 @@ const Experience = () => {
       ],
       certificate: 'https://f90xpzjw.r.ap-south-1.awstrack.me/L0/https:%2F%2Fskillwallet.smartinternz.com%2Fcertificate%2Fvirtual-internship%2Fe29b722e35040b88678e25a1ec032a21/2/01090195eff0a44f-0abe7e24-802c-4d94-9967-c51b2ced9652-000000/9uNJxvlIBmB52mqlQy4pYiNjqws=200',
       color: '#10B981'
+    },
+    {
+      id: 2,
+      type: 'Job',
+      title: 'Full Stack Developer',
+      company: 'Zynextro Technologies LLP',
+      duration: 'October 2025 - November 2025',
+      description: 'Designed the official website with the admin panel of the Zynextro Technologies LLP. Also worked on initializing the CRM project of the company.',
+      technologies: ['PHP', 'MySQL','CRM'],
+      achievements: [
+        'Developed company official website',
+        'DEveloped admin panel for website',
+        'Initiated CRM project for company'
+      ],
+      color: '#f59e42'
     }
   ];
 
