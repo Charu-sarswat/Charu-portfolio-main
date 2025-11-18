@@ -74,6 +74,15 @@ const Projects = () => {
       icon: <FaLaptop />, 
       color: "#f43f5e", // rose
       technologies: ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      id: 8,
+      title: "Zynextro Website",
+      description: "Designed the official website of the Zynextro Technologies LLP.",
+      demoLink: "https://www.zynextro.com/",
+      icon: <FaGlobe />, 
+      color: "#2563eb", // blue
+      technologies: ["PHP", "Bootstrap", "MySQL"]
     }
   ];
 
