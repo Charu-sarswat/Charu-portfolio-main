@@ -44,6 +44,8 @@
   font-weight: 800;
   letter-spacing: 1.5px;
   display: inline-block;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .typing-effect {
@@ -127,6 +129,8 @@
   color: #475569;
   margin-bottom: 1.5rem;
   font-weight: 500;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .hero-description {
@@ -208,24 +212,67 @@
 
 /* Responsive design */
 @media (max-width: 768px) {
+  .hero {
+    padding-top: 100px;
+    min-height: auto;
+    padding-bottom: 3rem;
+  }
+  
   .hero-content {
     padding: 0 1rem;
   }
   
-  .hero-name {
-    font-size: 3.5rem;
+  .hero-greeting {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.2;
+  }
+  
+  .hero-fullname {
+    font-size: 2.2rem;
+    margin-left: 0.5rem;
+    display: inline-block;
+    word-wrap: break-word;
+  }
+  
+  .typing-effect {
+    font-size: 2rem;
+  }
+  
+  .typing-cursor {
+    font-size: 2rem;
   }
   
   .hero-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .hero-description {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
   }
   
   .hero-buttons {
     justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 0.95rem;
   }
   
   .hero-social {
@@ -247,12 +294,60 @@
 }
 
 @media (max-width: 480px) {
-  .hero-name {
-    font-size: 3rem;
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 2rem;
+  }
+  
+  .hero-greeting {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .hero-fullname {
+    font-size: 1.8rem;
+    margin-left: 0.3rem;
+    display: block;
+    margin-top: 0.3rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .typing-effect {
+    font-size: 1.6rem;
+  }
+  
+  .typing-cursor {
+    font-size: 1.6rem;
+  }
+  
+  .hero-title {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .hero-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 0;
+  }
+  
+  .hero-buttons {
+    max-width: 100%;
+  }
+  
+  .hero-buttons .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
   
   .social-link {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
   }
 } 

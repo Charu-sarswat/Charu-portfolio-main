@@ -106,6 +106,10 @@
 }
 
 @media (max-width: 768px) {
+  .header {
+    padding: 0.8rem 0;
+  }
+  
   .nav {
     position: fixed;
     top: 100%;
@@ -119,6 +123,8 @@
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border-top: 1px solid rgba(59, 130, 246, 0.1);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
   }
 
   .nav.nav-open {
@@ -130,7 +136,7 @@
   .nav-list {
     flex-direction: column;
     gap: 0;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
   }
 
   .nav-list li {
@@ -139,15 +145,15 @@
 
   .nav-list a {
     display: block;
-    padding: 1.5rem 2rem;
-    font-size: 1.1rem;
+    padding: 1.2rem 1.5rem;
+    font-size: 1rem;
     transition: all 0.3s ease;
     color: #475569;
   }
 
   .nav-list a:hover {
     background: rgba(59, 130, 246, 0.05);
-    padding-left: 2.5rem;
+    padding-left: 2rem;
     color: #3b82f6;
   }
 
@@ -157,9 +163,35 @@
 
   .mobile-menu-btn {
     display: block;
+    font-size: 1.3rem;
+    padding: 0.4rem;
   }
   
   .logo a {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0.7rem 0;
+  }
+  
+  .logo a {
+    font-size: 1.3rem;
+  }
+  
+  .mobile-menu-btn {
+    font-size: 1.2rem;
+    padding: 0.35rem;
+  }
+  
+  .nav-list a {
+    padding: 1rem 1.2rem;
+    font-size: 0.95rem;
+  }
+  
+  .nav-list a:hover {
+    padding-left: 1.5rem;
   }
 } 

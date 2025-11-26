@@ -301,7 +301,8 @@
   
   .experience-section h3,
   .achievements-section h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
   }
   
   .experience-card {
@@ -309,42 +310,197 @@
   }
   
   .experience-header {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    align-items: flex-start;
     gap: 1rem;
   }
   
+  .experience-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+  
   .experience-info h3 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+  
+  .experience-info .company {
+    font-size: 0.9rem;
+  }
+  
+  .experience-info .duration {
+    font-size: 0.8rem;
+  }
+  
+  .experience-content .description {
+    font-size: 0.9rem;
+  }
+  
+  .technologies h4,
+  .achievements h4 {
+    font-size: 0.9rem;
+  }
+  
+  .tech-tags {
+    gap: 0.3rem;
+  }
+  
+  .tech-tag {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+  }
+  
+  .achievements li {
+    font-size: 0.8rem;
+    padding-left: 1rem;
+  }
+  
+  .certificate-btn {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
   }
   
   .achievements-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .experience-card {
-    padding: 1.5rem;
-  }
-  
-  .experience-info h3 {
-    font-size: 1.4rem;
-  }
-  
-  .experience-icon {
-    width: 35px;
-    height: 35px;
-    font-size: 1rem;
+    gap: 1.2rem;
   }
   
   .achievement-card {
     padding: 1rem;
   }
   
-  .tech-tag {
+  .achievement-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+  
+  .achievement-content h4 {
+    font-size: 1rem;
+  }
+  
+  .achievement-content p {
+    font-size: 0.85rem;
+  }
+  
+  .achievement-year {
     font-size: 0.75rem;
     padding: 0.25rem 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-content {
+    gap: 2rem;
+  }
+  
+  .experience-section h3,
+  .achievements-section h3 {
+    font-size: 1.5rem;
+  }
+  
+  .experience-card {
+    padding: 1rem;
+  }
+  
+  .experience-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+  }
+  
+  .experience-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+  
+  .experience-info h3 {
+    font-size: 1.1rem;
+  }
+  
+  .experience-info .company {
+    font-size: 0.85rem;
+  }
+  
+  .experience-info .duration {
+    font-size: 0.75rem;
+  }
+  
+  .experience-content .description {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+  
+  .technologies,
+  .achievements {
+    text-align: center;
+  }
+  
+  .technologies h4,
+  .achievements h4 {
+    font-size: 0.85rem;
+  }
+  
+  .tech-tags {
+    justify-content: center;
+  }
+  
+  .tech-tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+  
+  .achievements ul {
+    text-align: left;
+  }
+  
+  .achievements li {
+    font-size: 0.75rem;
+  }
+  
+  .certificate-link {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .certificate-btn {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.7rem;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .achievements-grid {
+    gap: 1rem;
+  }
+  
+  .achievement-card {
+    padding: 0.9rem;
+  }
+  
+  .achievement-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+  
+  .achievement-content h4 {
+    font-size: 0.95rem;
+  }
+  
+  .achievement-content p {
+    font-size: 0.8rem;
+  }
+  
+  .achievement-year {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
   }
 } 
