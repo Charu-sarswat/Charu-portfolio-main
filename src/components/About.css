@@ -1,8 +1,7 @@
 .about {
   background: #050806;
   position: relative;
-  padding-top: 95px;
-  padding-bottom: 50px;
+  padding: 70px 0;
 }
 
 .about::before {
