@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaCode } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
@@ -48,7 +48,7 @@ const Contact = () => {
     {
       icon: <FaMapMarkerAlt />,
       title: 'Location',
-      value: 'India',
+      value: 'Ghaziabad, India',
       link: null
     }
   ];
@@ -57,20 +57,20 @@ const Contact = () => {
     {
       icon: <FaGithub />,
       name: 'GitHub',
-      url: 'https://github.com/Charu-sarswat?tab=repositories',
-      color: '#1e40af'
+      url: 'https://github.com/Charu-sarswat',
+      color: '#10b981'
     },
     {
       icon: <FaLinkedin />,
       name: 'LinkedIn',
       url: 'https://www.linkedin.com/in/charu-sarswat-060590298/',
-      color: '#1e40af'
+      color: '#10b981'
     },
     {
-      icon: <FaInstagram />,
-      name: 'Instagram',
-      url: 'https://www.instagram.com/',
-      color: '#1e40af'
+      icon: <FaCode />,
+      name: 'Codolio Profile',
+      url: 'https://codolio.com/profile/CharuSarswat',
+      color: '#10b981'
     }
   ];
 
@@ -129,7 +129,7 @@ const Contact = () => {
             </div>
 
             <div className="social-links">
-              <h4>Follow Me</h4>
+              <h4>Follow & Connect</h4>
               <div className="social-icons">
                 {socialLinks.map((social, index) => (
                   <motion.a
@@ -138,7 +138,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="social-icon"
-                    style={{ '--social-color': social.color }}
+                    title={social.name}
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
@@ -221,4 +221,4 @@ const Contact = () => {
   );
 };
 
-export default Contact; 
+export default Contact;

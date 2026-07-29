@@ -1,5 +1,6 @@
 .App {
   min-height: 100vh;
+  background-color: #050806;
 }
 
 .loading-screen {
@@ -8,14 +9,14 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  background: linear-gradient(135deg, #050806 0%, #0d140e 100%);
 }
 
 .loader {
   width: 50px;
   height: 50px;
-  border: 3px solid #333;
-  border-top: 3px solid #667eea;
+  border: 3px solid #1a261c;
+  border-top: 3px solid #10b981;
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin-bottom: 20px;
@@ -27,8 +28,10 @@
 }
 
 .loading-screen p {
-  color: #a0a0a0;
+  color: #10b981;
   font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 /* Smooth scrolling for the entire app */
@@ -42,14 +45,14 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: #050806;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #10b981 0%, #00ff87 100%);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
-} 
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+}

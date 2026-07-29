@@ -1,45 +1,59 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaBriefcase, FaGraduationCap, FaTrophy, FaCertificate, FaCog, FaCode, FaBuilding, FaMedal, FaAward, FaLightbulb } from 'react-icons/fa';
+import { FaBriefcase, FaGraduationCap, FaTrophy, FaCertificate, FaBuilding, FaMedal, FaAward, FaLightbulb } from 'react-icons/fa';
 import './Experience.css';
 
 const Experience = () => {
   const experiences = [
     {
-      id: 4,
-      type: 'leadership',
-      title: 'Chief Technical Officer & Co-founder(Soulmegle)',
-      company: 'Persist Venture (USA)',
-      duration: 'February 2025 - August 2025 [Full time]',
-      description: 'Full-Stack web developer (Persist Ventures) serving as Chief Technical Officer and co-founder of the (Soulmegle Project).',
-      technologies: ['Full-Stack Development', 'Leadership', 'Business Strategy', 'Web Development'],
+      id: 1,
+      type: 'job',
+      title: 'Full Stack Developer',
+      company: 'Notelia Pvt Ltd',
+      duration: 'Jan 2026 – Current',
+      description: 'Worked as a Full Stack Developer at Notelia, contributing to the development of the company website, CRM, and ERP systems.',
+      technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'CRM', 'ERP'],
       achievements: [
-        'Co-founded technology startup',
-        'Leading technical strategy and development',
-        'Managing full-stack web development projects'
+        'Contributed to core company website architecture',
+        'Developed internal CRM and ERP workflow modules',
+        'Implemented full-stack features and API endpoints'
       ],
-      certificate: 'https://drive.google.com/file/d/1KzDPH28T7MrrnlTuGnb7UhhkYujAfMI5/view?usp=drive_link',
-      recommendation: 'https://drive.google.com/file/d/1QBQuPMv1FXF2Ox_9r6Mn3phMHoPjNi4q/view?usp=drive_link',
-      color: '#F59E0B'
+      color: '#10b981'
     },
     {
-      id: 1,
+      id: 2,
+      type: 'job',
+      title: 'Full-Stack Web Developer (Soulmegle)',
+      company: 'Persist Venture (USA)',
+      duration: 'February 2025 – August 2025',
+      description: 'Full-Stack Web Developer at Persist Ventures for Soulmegle project. Contributed to an AI-enabled chat and video platform using React, Node.js, MongoDB, WebRTC, and Vector Databases.',
+      technologies: ['React', 'Node.js', 'MongoDB', 'WebRTC', 'Vector Databases', 'NLP'],
+      achievements: [
+        'Worked on technology startup Soulmegle',
+        'Collaborated with cross-functional international teams',
+        'Ensured scalable architecture for real-time video & chat systems'
+      ],
+      certificate: 'https://drive.google.com/file/d/1KzDPH28T7MrrnlTuGnb7UhhkYujAfMI5/view?usp=drive_link',
+      color: '#00ff87'
+    },
+    {
+      id: 3,
       type: 'internship',
-      title: 'Embedded System Developer',
+      title: 'Embedded System Developer Intern',
       company: 'Emertex (Bangalore)',
       duration: 'January 2025 – March 2025',
       description: 'Built an SDLC-based real-time embedded system project using core C programming concepts.',
       technologies: ['C Programming', 'Embedded Systems', 'SDLC', 'Real-time Systems'],
       achievements: [
         'Developed real-time embedded system project',
-        'Applied SDLC methodology in development',
-        'Utilized core C programming concepts'
+        'Applied strict SDLC methodology in development',
+        'Utilized low-level core C concepts'
       ],
       certificate: 'https://drive.google.com/file/d/1bbBlJYDww7-9_xzL7FR6ayGdUH0o1wWy/view?usp=sharing',
-      color: '#4F46E5'
+      color: '#22c55e'
     },
     {
-      id: 3,
+      id: 4,
       type: 'internship',
       title: 'Full-Stack Developer Intern',
       company: 'SmartInternz',
@@ -49,25 +63,10 @@ const Experience = () => {
       achievements: [
         'Built real-time social media application',
         'Implemented full-stack development solutions',
-        'Used modern web technologies stack'
+        'Integrated modern MERN stack technologies'
       ],
       certificate: 'https://f90xpzjw.r.ap-south-1.awstrack.me/L0/https:%2F%2Fskillwallet.smartinternz.com%2Fcertificate%2Fvirtual-internship%2Fe29b722e35040b88678e25a1ec032a21/2/01090195eff0a44f-0abe7e24-802c-4d94-9967-c51b2ced9652-000000/9uNJxvlIBmB52mqlQy4pYiNjqws=200',
-      color: '#10B981'
-    },
-    {
-      id: 2,
-      type: 'Job',
-      title: 'Full Stack Developer',
-      company: 'Zynextro Technologies LLP',
-      duration: 'October 2025 - November 2025',
-      description: 'Designed the official website with the admin panel of the Zynextro Technologies LLP. Also worked on initializing the CRM project of the company.',
-      technologies: ['PHP', 'MySQL','CRM'],
-      achievements: [
-        'Developed company official website',
-        'DEveloped admin panel for website',
-        'Initiated CRM project for company'
-      ],
-      color: '#f59e42'
+      color: '#34d399'
     }
   ];
 
@@ -78,7 +77,7 @@ const Experience = () => {
       description: 'Published a Patent on "Accident Control System"',
       year: 'April 2024',
       icon: <FaLightbulb />,
-      color: '#FFD700'
+      color: '#00ff87'
     },
     {
       id: 2,
@@ -86,7 +85,7 @@ const Experience = () => {
       description: 'Won International AI Software Hackathon (USA)',
       year: '2024',
       icon: <FaTrophy />,
-      color: '#FF6B6B'
+      color: '#10b981'
     },
     {
       id: 3,
@@ -94,7 +93,7 @@ const Experience = () => {
       description: 'Silver Medal at Jawaharlal Nehru Science Exhibition and Project Competition',
       year: '2024',
       icon: <FaMedal />,
-      color: '#C0C0C0'
+      color: '#22c55e'
     },
     {
       id: 4,
@@ -102,7 +101,7 @@ const Experience = () => {
       description: 'Rank 1 in District and Rank 2 in Zone in the "Digital India" Debate Competition',
       year: '2024',
       icon: <FaAward />,
-      color: '#4ECDC4'
+      color: '#34d399'
     },
     {
       id: 5,
@@ -110,31 +109,7 @@ const Experience = () => {
       description: 'National Talent Search (NTS) Qualified',
       year: '2018',
       icon: <FaCertificate />,
-      color: '#45B7D1'
-    },
-    {
-      id: 6,
-      title: 'Embedded Systems Certification',
-      description: 'Completed embedded system development training at Emertex',
-      year: '2025',
-      icon: <FaCog />,
-      color: '#96CEB4'
-    },
-    {
-      id: 7,
-      title: 'SmartInternz Certification',
-      description: 'Full-stack development internship certification',
-      year: '2025',
-      icon: <FaCode />,
-      color: '#FFEAA7'
-    },
-    {
-      id: 8,
-      title: 'Startup Leadership',
-      description: 'Co-founder and CTO at Persist Venture',
-      year: '2025',
-      icon: <FaBuilding />,
-      color: '#DDA0DD'
+      color: '#059669'
     }
   ];
 
@@ -143,9 +118,9 @@ const Experience = () => {
       case 'internship':
         return <FaBriefcase />;
       case 'leadership':
+      case 'job':
         return <FaBuilding />;
       case 'project':
-        return <FaGraduationCap />;
       case 'academic':
         return <FaGraduationCap />;
       default:
@@ -187,7 +162,7 @@ const Experience = () => {
         </div>
         
         <div className="achievements">
-          <h4>Key Achievements:</h4>
+          <h4>Key Highlights:</h4>
           <ul>
             {experience.achievements.map((achievement, achievementIndex) => (
               <li key={achievementIndex}>{achievement}</li>
@@ -243,10 +218,6 @@ const Experience = () => {
         <p>{achievement.description}</p>
         <span 
           className="achievement-year" 
-          style={{ 
-            background: `linear-gradient(135deg, ${achievement.color} 0%, ${achievement.color}80 100%)`,
-            boxShadow: `0 4px 15px ${achievement.color}40`
-          }}
         >
           {achievement.year}
         </span>
@@ -263,7 +234,7 @@ const Experience = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title">Experience & Achievements</h2>
+          <h2 className="section-title">Experience & Honors</h2>
           <p className="section-subtitle">My professional journey and accomplishments</p>
         </motion.div>
 
@@ -290,7 +261,7 @@ const Experience = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <h3>Achievements & Certifications</h3>
+            <h3>Honors & Awards</h3>
             <div className="achievements-grid">
               {achievements.map((achievement, index) => (
                 <AchievementCard key={achievement.id} achievement={achievement} index={index} />
@@ -303,4 +274,4 @@ const Experience = () => {
   );
 };
 
-export default Experience; 
+export default Experience;

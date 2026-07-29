@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import './Hero.css';
 
 const Hero = () => {
@@ -24,11 +23,11 @@ const Hero = () => {
             </p>
             
             <h2 className="hero-title">
-              Full Stack Developer Persist Venture(USA)
+              Full Stack Developer at Notelia Pvt Ltd
             </h2>
             
             <p className="hero-description">
-              Building the future of social connection as CTO & co-founder of Soulmegle. Expert in scalable web apps, passionate about tech, startups, and turning ideas into reality.
+              Full Stack Web Developer with experience at Notelia and Persist Ventures (USA). Skilled in building scalable web applications, real-time communication platforms (WebRTC), CRM/ERP systems, and vector search algorithms.
             </p>
             
             <div className="hero-buttons">
@@ -47,22 +46,9 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        
-        <div className="hero-social">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link">
-            <FaGithub />
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
-            <FaLinkedin />
-          </a>
-          <a href="mailto:charu@example.com" className="social-link">
-            <FaEnvelope />
-          </a>
-        </div>
-        
       </div>
     </section>
   );
 };
 
-export default Hero; 
+export default Hero;

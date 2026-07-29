@@ -4,49 +4,48 @@ import {
   FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPython, 
   FaJava, FaDatabase, FaCode, FaLaptop, FaTools, FaBrain
 } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiPhp, SiWordpress, SiCplusplus, SiGithub, SiVisualstudiocode } from 'react-icons/si';
+import { SiMongodb, SiExpress, SiPhp, SiWordpress, SiCplusplus, SiGithub, SiVisualstudiocode, SiTypescript } from 'react-icons/si';
 import './Skills.css';
 
 const Skills = () => {
   const languages = [
-    { name: 'HTML', icon: <FaHtml5 />, level: 90, color: '#E34F26' },
-    { name: 'CSS', icon: <FaCss3Alt />, level: 85, color: '#1572B6' },
-    { name: 'JavaScript', icon: <FaJs />, level: 85, color: '#F7DF1E' },
-    { name: 'React', icon: <FaReact />, level: 80, color: '#61DAFB' },
-    { name: 'Node.js', icon: <FaNodeJs />, level: 75, color: '#339933' },
-    { name: 'Express', icon: <SiExpress />, level: 75, color: '#000000' },
-    { name: 'MongoDB', icon: <SiMongodb />, level: 70, color: '#47A248' },
-    { name: 'SQL', icon: <FaDatabase />, level: 70, color: '#4479A1' },
-    { name: 'Java', icon: <FaJava />, level: 70, color: '#ED8B00' },
-    { name: 'Python', icon: <FaPython />, level: 60, color: '#3776AB' },
-    { name: 'C++', icon: <SiCplusplus />, level: 55, color: '#00599C' },
-    { name: 'PHP', icon: <SiPhp />, level: 65, color: '#777BB4' },
-    { name: 'WordPress', icon: <SiWordpress />, level: 60, color: '#21759B' }
+    { name: 'HTML', icon: <FaHtml5 />, level: 90, color: '#10b981' },
+    { name: 'CSS', icon: <FaCss3Alt />, level: 85, color: '#00ff87' },
+    { name: 'JavaScript', icon: <FaJs />, level: 85, color: '#22c55e' },
+    { name: 'TypeScript', icon: <SiTypescript />, level: 80, color: '#34d399' },
+    { name: 'React', icon: <FaReact />, level: 85, color: '#059669' },
+    { name: 'Node.js', icon: <FaNodeJs />, level: 80, color: '#10b981' },
+    { name: 'Express', icon: <SiExpress />, level: 80, color: '#00ff87' },
+    { name: 'MongoDB', icon: <SiMongodb />, level: 75, color: '#22c55e' },
+    { name: 'SQL', icon: <FaDatabase />, level: 75, color: '#34d399' },
+    { name: 'Java', icon: <FaJava />, level: 70, color: '#059669' },
+    { name: 'Python (Basic)', icon: <FaPython />, level: 60, color: '#10b981' },
+    { name: 'C++ (Basic)', icon: <SiCplusplus />, level: 60, color: '#00ff87' }
   ];
 
   const tools = [
-    { name: 'VS Code', icon: <SiVisualstudiocode />, level: 90, color: '#007ACC' },
-    { name: 'GitHub', icon: <SiGithub />, level: 85, color: '#181717' },
-    { name: 'Cursor', icon: <FaCode />, level: 80, color: '#00D4AA' },
-    { name: 'CodeSpace', icon: <FaLaptop />, level: 75, color: '#6366F1' },
-    { name: 'Windsurf', icon: <FaTools />, level: 70, color: '#EC4899' },
-    { name: 'Copilot', icon: <FaBrain />, level: 80, color: '#10A37F' },
-    { name: 'ChatGPT', icon: <FaBrain />, level: 85, color: '#FF6B6B' },
-    { name: 'GorkAI', icon: <FaBrain />, level: 70, color: '#8B5CF6' },
-    { name: 'Loveable', icon: <FaTools />, level: 65, color: '#F59E0B' }
+    { name: 'VS Code', icon: <SiVisualstudiocode />, level: 90, color: '#10b981' },
+    { name: 'GitHub', icon: <SiGithub />, level: 85, color: '#00ff87' },
+    { name: 'Cursor', icon: <FaCode />, level: 85, color: '#22c55e' },
+    { name: 'CodeSpace', icon: <FaLaptop />, level: 75, color: '#34d399' },
+    { name: 'Windsurf', icon: <FaTools />, level: 75, color: '#059669' },
+    { name: 'Copilot', icon: <FaBrain />, level: 80, color: '#10b981' },
+    { name: 'ChatGPT', icon: <FaBrain />, level: 85, color: '#00ff87' },
+    { name: 'GorkAI', icon: <FaBrain />, level: 75, color: '#22c55e' },
+    { name: 'Loveable', icon: <FaTools />, level: 70, color: '#34d399' }
   ];
 
   const coreSkills = [
-    'Data Structures',
-    'Algorithms',
-    'Problem Solving',
-    'Web Development',
+    'Data Structures & Algorithms (DSA)',
+    'Object-Oriented Programming (OOPs)',
+    'Operating Systems',
+    'DBMS',
+    'Computer Networks',
+    'Scalable System Design',
     'Full-Stack Development',
     'API Development',
     'Database Design',
-    'Version Control',
-    'Responsive Design',
-    'UI/UX Design'
+    'Real-time Systems'
   ];
 
   const SkillCard = ({ skill, index }) => (
@@ -68,7 +67,7 @@ const Skills = () => {
             className="skill-progress" 
             style={{ 
               width: `${skill.level}%`,
-              background: `linear-gradient(135deg, ${skill.color} 0%, ${skill.color}80 100%)`
+              background: `linear-gradient(135deg, ${skill.color} 0%, #059669 100%)`
             }}
           ></div>
         </div>
@@ -98,7 +97,7 @@ const Skills = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h3>Programming Languages & Technologies</h3>
+            <h3>Languages & Frameworks</h3>
             <div className="skills-grid">
               {languages.map((skill, index) => (
                 <SkillCard key={skill.name} skill={skill} index={index} />
@@ -113,7 +112,7 @@ const Skills = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <h3>Development Tools & AI</h3>
+            <h3>Development Tools & AI Platforms</h3>
             <div className="skills-grid">
               {tools.map((skill, index) => (
                 <SkillCard key={skill.name} skill={skill} index={index} />
@@ -128,15 +127,15 @@ const Skills = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3>Core Skills & Expertise</h3>
+            <h3>Core CS Competencies</h3>
             <div className="core-skills-grid">
               {coreSkills.map((skill, index) => (
-                <motion.div
-                  key={skill}
+                <motion.div 
+                  key={skill} 
                   className="core-skill-item"
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
+                  transition={{ duration: 0.4, delay: index * 0.05 }}
                   viewport={{ once: true }}
                   whileHover={{ scale: 1.05 }}
                 >
@@ -151,4 +150,4 @@ const Skills = () => {
   );
 };
 
-export default Skills; 
+export default Skills;

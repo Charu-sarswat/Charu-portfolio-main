@@ -1,88 +1,68 @@
 import React from 'react';
-import { FaLaptop, FaMobile, FaGlobe, FaRocket, FaBrain, FaGraduationCap, FaUsers } from 'react-icons/fa';
+import { FaGlobe, FaRocket, FaGraduationCap, FaBalanceScale, FaCogs, FaTshirt, FaPills } from 'react-icons/fa';
 import './Projects.css';
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Soulmegle",
-      description: "Built a chat and video call app to connect random or known users based on shared hobbies using a vector similarity algorithm with MongoDB.",
-      demoLink: "https://soulmegle.com/",
-      videoLink: "https://www.loom.com/share/b1c4ae40a5e241cbbfbf0c533171ddc2",
-      sourceCodeLink: "https://github.com/Charu-sarswat/Hobby-matcher",
-      icon: <FaRocket />,
-      color: "#FF6B6B",
-      technologies: ["React", "Node.js + Express", "MongoDB", "WebRTC", "NLP", "Vector Algorithm"]
+      title: "CRM System",
+      description: "Developed a web-based CRM (Customer Relationship Management) system to help businesses manage customers, leads, sales, and daily operations efficiently.",
+      videoLink: "https://drive.google.com/file/d/1GX9aqT5gCOM9sjMMoLKabJHnL5AV2qB6/view",
+      image: process.env.PUBLIC_URL + "/c.png",
+      icon: <FaCogs />,
+      color: "#10b981",
+      technologies: ["React", "Node.js + Express", "SQL"]
     },
     {
       id: 2,
-      title: "Notelia",
-      description: "Notelia is a comprehensive academic and social hub specifically designed for AKTU (Dr. A.P.J. Abdul Kalam Technical University) students and teachers.",
-      demoLink: "https://www.notelia.com/",
-      icon: <FaGraduationCap />,
-      color: "#4ECDC4",
-      technologies: ["React", "Node.js + Express", "MongoDB", "WebRTC", "Cloudflare", "Google Analytics"]
+      title: "Legal Olympiad",
+      description: "Designed a dynamic application using an external API with a responsive and engaging UI/UX for Legal Olympiad.",
+      demoLink: "https://app.legalolympiad.com/signin",
+      image: process.env.PUBLIC_URL + "/le.png",
+      icon: <FaBalanceScale />,
+      color: "#34d399",
+      technologies: ["React", "Tailwind CSS", "JavaScript", "REST APIs"]
     },
     {
       id: 3,
-      title: "GitHub Analyzer",
-      description: "Built a tool that fetches GitHub user data and visualizes daily commits and repository statistics.",
-      demoLink: "https://gitb-analyze.netlify.app/",
-      videoLink: "https://www.loom.com/share/2957089a10bd484ea3c660913de2e29c?sid=eba65bd7-6da2-43f7-a178-2e6bc4763c1d",
-      sourceCodeLink: "https://github.com/Charu-sarswat/Analyzer",
-      icon: <FaGlobe />,
-      color: "#45B7D1",
-      technologies: ["React", "ShadCN", "Tailwind", "TypeScript"]
+      title: "Notelia",
+      description: "Notelia is a comprehensive academic and social hub specifically designed for AKTU (Dr. A.P.J. Abdul Kalam Technical University) students and teachers.",
+      demoLink: "https://www.notelia.com/",
+      image: process.env.PUBLIC_URL + "/mokeup.png",
+      icon: <FaGraduationCap />,
+      color: "#22c55e",
+      technologies: ["React", "Node.js + Express", "MongoDB", "WebRTC", "Cloudflare", "Google Analytics"]
     },
     {
       id: 4,
-      title: "Quiz App",
-      description: "Designed a dynamic quiz application using an external API with a responsive and engaging UI/UX.",
-      demoLink: "https://savitaworld.netlify.app/",
-      videoLink: "https://drive.google.com/file/d/18ckkPKlgsWO8BZv6eR8Ohp0YFOE31s18/view?usp=sharing",
-      sourceCodeLink: "https://github.com/Charu-sarswat/Quiz",
-      icon: <FaMobile />, 
-      color: "#2563eb", // blue
-      technologies: ["React", "Tailwind", "JavaScript"]
+      title: "The Orchid Laundry",
+      description: "Designed and developed a modern, responsive web platform for premium laundry and dry cleaning services featuring online service booking and pricing.",
+      demoLink: "https://theorchidlaundry.com/",
+      image: process.env.PUBLIC_URL + "/l.png",
+      icon: <FaTshirt />,
+      color: "#059669",
+      technologies: ["React", "JavaScript", "Tailwind CSS", "UI/UX Design"]
     },
     {
       id: 5,
-      title: "Virtual Try On",
-      description: "An innovative AI-powered virtual clothing try-on platform. Users can virtually try clothes through advanced computer vision and deep learning. Built during a hackathon, featuring real-time garment simulation and seamless UI/UX.",
-      demoLink: "https://drive.google.com/drive/folders/1N20iV80GPnwtWxY_yS1Rm5Aos4v_ZyPG?usp=drive_link",
-      sourceCodeLink: "https://github.com/Charu-sarswat/Try-Clothes",
-      icon: <FaBrain />, 
-      color: "#f59e42", // orange
-      technologies: ["React", "TensorFlow", "AI/ML", "Computer Vision"]
+      title: "Ashirwad Pharma",
+      description: "Designed and developed a responsive web platform for pharmaceutical and healthcare services, showcasing medical product catalogs and services.",
+      demoLink: "https://ashirwad-fama.netlify.app/",
+      image: process.env.PUBLIC_URL + "/as.png",
+      icon: <FaPills />, 
+      color: "#10b981",
+      technologies: ["React", "JavaScript", "Tailwind CSS", "UI/UX Design"]
     },
     {
       id: 6,
-      title: "Buyer Lead Management App",
-      description: "A modern, professional Next.js application for managing real estate buyer leads with comprehensive features including authentication, CSV import/export, real-time updates, and advanced filtering.",
-      demoLink: "https://buyer-app-one.vercel.app/buyers",
-      icon: <FaUsers />, 
-      color: "#10b981", // green
-      technologies: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "NextAuth.js", "Tailwind CSS", "Zod"]
-    },
-    {
-      id: 7,
-      title: "Ecommerce Website",
-      description: "Ecommerce platform for clothing with ordering and price checking features. Designed for retail shops and malls.",
-      demoLink: "https://boisterous-praline-7192f1.netlify.app/",
-      sourceCodeLink: "https://github.com/Charu-sarswat/Ecommerce",
-      icon: <FaLaptop />, 
-      color: "#f43f5e", // rose
-      technologies: ["HTML", "CSS", "JavaScript"]
-    },
-    {
-      id: 8,
-      title: "Zynextro Website",
-      description: "Designed the official website of the Zynextro Technologies LLP.",
-      demoLink: "https://www.zynextro.com/",
-      icon: <FaGlobe />, 
-      color: "#2563eb", // blue
-      technologies: ["PHP", "Bootstrap", "MySQL"]
+      title: "Soulmegle",
+      description: "Built a chat and video call app to connect random or known users based on shared hobbies using a vector similarity algorithm with MongoDB.",
+      videoLink: "https://www.loom.com/share/b1c4ae40a5e241cbbfbf0c533171ddc2",
+      image: process.env.PUBLIC_URL + "/s.png",
+      icon: <FaRocket />,
+      color: "#00ff87",
+      technologies: ["React", "Node.js + Express", "MongoDB", "WebRTC", "NLP", "Vector Algorithm"]
     }
   ];
 
@@ -90,7 +70,7 @@ const Projects = () => {
     <section id="projects" className="projects section">
       <div className="container">
         <h2 className="section-title">My Projects</h2>
-        <p className="section-subtitle">Here are some of my recent works</p>
+        <p className="section-subtitle">Here are some of my key projects and achievements</p>
         
         <div className="projects-grid">
           {projects.map((project) => (
@@ -98,9 +78,15 @@ const Projects = () => {
               key={project.id} 
               className="project-card"
             >
-              <div className="project-icon" style={{ color: project.color }}>
-                {project.icon}
-              </div>
+              {project.image ? (
+                <div className="project-image-container">
+                  <img src={project.image} alt={project.title} className="project-card-image" />
+                </div>
+              ) : (
+                <div className="project-icon" style={{ color: project.color }}>
+                  {project.icon}
+                </div>
+              )}
               
               <h3 className="project-title">{project.title}</h3>
               
@@ -108,7 +94,7 @@ const Projects = () => {
               
               <div className="project-technologies">
                 {project.technologies.map((tech, index) => (
-                  <span key={index} className="tech-tag" style={{ backgroundColor: `${project.color}15`, color: project.color }}>
+                  <span key={index} className="tech-tag">
                     {tech}
                   </span>
                 ))}
@@ -121,7 +107,6 @@ const Projects = () => {
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="project-link demo-link"
-                    style={{ backgroundColor: project.color }}
                   >
                     Live Demo
                   </a>
@@ -132,9 +117,18 @@ const Projects = () => {
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="project-link video-link"
-                    style={{ backgroundColor: project.color }}
                   >
                     Video Demo
+                  </a>
+                )}
+                {project.sourceCodeLink && (
+                  <a 
+                    href={project.sourceCodeLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="project-link source-link"
+                  >
+                    Source Code
                   </a>
                 )}
               </div>
@@ -146,4 +140,4 @@ const Projects = () => {
   );
 };
 
-export default Projects; 
+export default Projects;
