@@ -1,7 +1,8 @@
 .about {
   background: #050806;
   position: relative;
-  padding: 50px 0;
+  padding-top: 95px;
+  padding-bottom: 50px;
 }
 
 .about::before {
@@ -410,8 +411,8 @@
 /* Responsive design */
 @media (max-width: 768px) {
   .about {
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
+    padding-top: 55px !important;
+    padding-bottom: 25px !important;
   }
   
   .about-content {
@@ -513,8 +514,8 @@
 
 @media (max-width: 480px) {
   .about {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
+    padding-top: 45px !important;
+    padding-bottom: 20px !important;
   }
 
   .about-text h3 {
