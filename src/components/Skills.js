@@ -4,7 +4,7 @@ import {
   FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPython, 
   FaJava, FaDatabase, FaCode, FaLaptop, FaTools, FaBrain
 } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiPhp, SiWordpress, SiCplusplus, SiGithub, SiVisualstudiocode, SiTypescript } from 'react-icons/si';
+import { SiMongodb, SiExpress, SiCplusplus, SiGithub, SiVisualstudiocode, SiTypescript } from 'react-icons/si';
 import './Skills.css';
 
 const Skills = () => {
