@@ -48,7 +48,7 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <a href="#home">Portfolio</a>
+            <a href="#home">Charu</a>
           </motion.div>
 
           <nav className={`nav ${isOpen ? 'nav-open' : ''}`}>
